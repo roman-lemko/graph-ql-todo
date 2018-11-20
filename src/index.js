@@ -1,10 +1,17 @@
 const Koa = require("koa");
+const { ApolloServer, gql } = require('apollo-server-koa');
+const initializeDatabase = require("./db.initializer").initialize;
 
-const app = new Koa();
 const port = 5000;
 
-app.use(context => context.body = "It's alive!");
+const bootstrap = async () => {
+    await initializeDatabase();
 
-app.listen(port);
+    const app = new Koa();
 
-console.log("Application started. Listening to port: ", port);
+    app.use(async context => context.body = "App is running");
+
+    app.listen(port, () => console.log("Application started. Listening to port: ", port));
+}
+
+bootstrap();

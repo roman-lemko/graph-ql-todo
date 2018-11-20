@@ -4,6 +4,7 @@
   "description": "PoC of todo app using GraphQl and koa",
   "main": "index.js",
   "scripts": {
+    "start": "node .\\src\\index.js",
     "test": "test"
   },
   "repository": {
@@ -21,6 +22,9 @@
   },
   "homepage": "https://github.com/roman-lemko/graph-ql-todo#readme",
   "dependencies": {
-    "koa": "^2.6.2"
+    "apollo-server-koa": "^2.2.2",
+    "graphql": "^14.0.2",
+    "koa": "^2.6.2",
+    "sqlite3": "^4.0.4"
   }
 }
