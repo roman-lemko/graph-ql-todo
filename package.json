@@ -1,0 +1,26 @@
+{
+  "name": "graph-ql-todo",
+  "version": "0.0.1",
+  "description": "PoC of todo app using GraphQl and koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roman-lemko/graph-ql-todo.git"
+  },
+  "keywords": [
+    "koa",
+    "graphql"
+  ],
+  "author": "Roman Lemko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roman-lemko/graph-ql-todo/issues"
+  },
+  "homepage": "https://github.com/roman-lemko/graph-ql-todo#readme",
+  "dependencies": {
+    "koa": "^2.6.2"
+  }
+}
