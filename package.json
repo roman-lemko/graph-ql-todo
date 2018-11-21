@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/roman-lemko/graph-ql-todo#readme",
   "dependencies": {
-    "apollo-server-koa": "^2.2.2",
     "graphql": "^14.0.2",
     "koa": "^2.6.2",
+    "koa-graphql": "^0.8.0",
+    "koa-router": "^7.4.0",
     "sqlite3": "^4.0.4"
   }
 }
