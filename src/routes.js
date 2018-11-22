@@ -6,7 +6,7 @@ const mutations = require('./graphql/graphql-mutations');
 
 const router = new Router();
 
-router.all('/graphql', graphqlHTTP({
+router.all('/', graphqlHTTP({
     schema: schema,
     rootValue: { ...resolvers, ...mutations },
     graphiql: true

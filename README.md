@@ -5,5 +5,6 @@ Todo app back end using koa and GraphQL
 ## launching
 
 ```
-npm start
+> npm i
+> npm start
 ```
